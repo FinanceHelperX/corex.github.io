@@ -286,7 +286,7 @@ async function connectWallet() {
      $("#con").attr({"style":"display : ;"})
 
 
-        $('.buyButton').html("RoastARB");
+        $('.buyButton').html("RoastCore");
         //构造以太坊对象的抽象对象 provider   
         //js 通过 provider对象与以太坊网络进行交互
         let provider = new ethers.providers.JsonRpcProvider("https://rpc.coredao.org/");
