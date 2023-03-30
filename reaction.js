@@ -1,4 +1,3 @@
-
 const contractAddress = "0x21fdEAF49D3082CECbf27d6339aCAf7Daf1872B1";
 const contractAbi =
 [
@@ -545,9 +544,3 @@ async function goAgain() {
 	});
 	
 }
-
-
-
-
-
-
