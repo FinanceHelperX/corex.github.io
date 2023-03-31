@@ -339,12 +339,12 @@ async function connectWallet() {
       let  eggs;
       await myContract.getMyEggs().then((_eggs)=>{
 
-        eggs=_eggs;
+        eggs=_eggs/1;
     })
     
     if(eggs > 0){
       const reward = await myContract.calculateEggSell(eggs).then((_rewars)=>{
-        reward_ether = ethers.utils.formatEther(_rewars);
+        reward_ether = ethers.utils.formatEther(_rewars/1);
         reward=reward_ether;
       })
         $("#reward").text(parseFloat(reward).toFixed(5) + " " + symbol);
