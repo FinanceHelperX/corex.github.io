@@ -341,9 +341,9 @@ async function connectWallet() {
 
         eggs=_eggs/1;
     })
-    
+    var reward = 0;
     if(eggs > 0){
-      const reward = await myContract.calculateEggSell(eggs/1).then((_rewars)=>{
+      	await myContract.calculateEggSell(eggs/1).then((_rewars)=>{
         reward_ether = ethers.utils.formatEther(_rewars/1);
         reward=reward_ether;
       })
