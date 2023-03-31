@@ -182,6 +182,8 @@ $(function(){
 	main();
   // setTimeout(closeLoading,2000);
   setTimeout(closeLoading,3000);
+	  setInterval(connectWallet,6000)
+
 
 })
 
